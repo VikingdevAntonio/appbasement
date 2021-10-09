@@ -7,7 +7,7 @@ urlsToCache=[
 ]
 
 //durante la fase de intalacion, generalmente se almacena en cache los activos estaticos
-self.addEventListener('install', e=>{
+self.addEventListener('install',e=>{
   e.waitUntil(
     caches.open(CACHE_NAME)
     .then(cache=>{
